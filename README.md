@@ -1,5 +1,5 @@
 # My Collection of Random (Probably Useless) Shit
-All of these are single header utilities, simply include the desired header using **#include "NAME.h"** (use the proper relative filepath to the header if it isn't in the same directory as the file referring to it). Hopefully all of this works, if it doesn't, it means I didn't test it and it's probably an easy fix.
+All of these are single header utilities, simply include the desired header using **#include "NAME.h"** (use the proper relative filepath to the header if it isn't in the same directory as the file referring to it). Hopefully all of this works, if it doesn't, it means I didn't test it and it's probably an easy fix. Also, these are all likely horribly ineffecient if at all useful :), just sharing in case someone out there needs a solution to the same problem I couldn't find one for.
 ## [keycode2str.h](https://github.com/ethanndev/the-great-pacific-garbage-patch/blob/master/keycode2str.h)
 - long ass switch case statement that returns a string name/descriptor for the hexadecimal value of abritrarily important (common) VK codes
 - useful for converting 0x2D to "Insert" for example
