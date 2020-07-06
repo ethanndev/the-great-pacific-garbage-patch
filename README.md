@@ -9,5 +9,7 @@ All of these are single-header utilities, simply include the desired header usin
 - an array with all keycode names/descriptors would suffice but I made this, idk why
 ## [registry.h](https://github.com/ethanxo/the-great-pacific-garbage-patch/blob/master/registry.h)
 - 3 functions to save a registry key, read a registry key, and delete a registry key
+- the read function returns "unresolved" if it fails but you can change the return
+- creates the key in "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows" by default (not its own folder, just a key in the windows folder in regedit)
 - path is customizable, you should know how to change it by looking at the code
 - common information but I feel like uploading more useful shit here :smile:
