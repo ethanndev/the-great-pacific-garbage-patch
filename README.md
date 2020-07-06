@@ -7,3 +7,7 @@ All of these are single-header utilities, simply include the desired header usin
 - useful for converting 0x2D to "Insert" for example
 - made this because I couldn't find a native function that returned the name/discriptor of the VK code (even if passing in the hex of backspace, for example, would return VK_BACKSPACE)
 - an array with all keycode names/descriptors would suffice but I made this, idk why
+## [registry.h](https://github.com/ethanxo/the-great-pacific-garbage-patch/blob/master/registry.h)
+- 3 functions to save a registry key, read a registry key, and delete a registry key
+- path is customizable, you should know how to change it by looking at the code
+- common information but I feel like uploading more useful shit here :smile:
