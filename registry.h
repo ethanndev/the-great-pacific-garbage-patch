@@ -6,7 +6,7 @@ void delkey() {
 
     LONG openRes = RegOpenKeyExA(HKEY_LOCAL_MACHINE, sk, 0, KEY_ALL_ACCESS, &hKey);
 
-    LPCTSTR name = TEXT("EVILINSIDE");
+    LPCTSTR name = TEXT("KEYNAMEHERE");
     LONG delRes = RegDeleteValueA(hKey, name); 
 
     LONG closeOut = RegCloseKey(hKey);
@@ -21,7 +21,7 @@ bool savekey(std::string key) {
         return false;
     }
 
-    LPCTSTR name = TEXT("EVILINSIDE");
+    LPCTSTR name = TEXT("SAMEKEYNAMEHERE");
     LPCTSTR value = TEXT(key.c_str());
     LONG setRes = RegSetValueExA(hKey, name, 0, REG_SZ, (LPBYTE)value, 32);
     if (!setRes == ERROR_SUCCESS) {
@@ -45,7 +45,7 @@ std::string checkkey() {
         return "unresolved";
     }
     
-    LPCTSTR name = TEXT("EVILINSIDE");
+    LPCTSTR name = TEXT("KEYNAMEHERE");
     const DWORD SIZE = 1024;
     TCHAR szValue[SIZE] = _T("");
     DWORD dwValue = SIZE;
