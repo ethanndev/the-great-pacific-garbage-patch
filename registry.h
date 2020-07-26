@@ -23,7 +23,7 @@ bool savekey(std::string key) {
 
     LPCTSTR name = TEXT("SAMEKEYNAMEHERE");
     LPCTSTR value = TEXT(key.c_str());
-    LONG setRes = RegSetValueExA(hKey, name, 0, REG_SZ, (LPBYTE)value, 32);
+    LONG setRes = RegSetValueExA(hKey, name, 0, REG_SZ, (LPBYTE)value, key.size());
     if (!setRes == ERROR_SUCCESS) {
         return false;
     }
