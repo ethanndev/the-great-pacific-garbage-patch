@@ -1,4 +1,4 @@
-# Garbage
+# random-utils
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 All of these are single-header utilities, simply include the desired header using **#include "NAME.h"** (use the proper relative filepath to the header if it isn't in the same directory as the file referring to it). Hopefully all of this works, if it doesn't, it means I didn't test it and it's probably an easy fix. Also, these are all likely horribly ineffecient if at all useful :), just sharing in case someone out there needs a solution to the same problem I couldn't find one for.
